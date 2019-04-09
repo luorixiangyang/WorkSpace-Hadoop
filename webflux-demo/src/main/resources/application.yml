@@ -1,0 +1,14 @@
+server:
+  port: 8086
+spring:
+  application:
+    name: webflux
+  main:
+    banner-mode: console
+  data:
+    #mongoDB连接信息
+    # 安装mongo命令：docker run --name mongodb-server0 -v /home/mongodb0:/data/db -p 27017:27017 -d mongo
+    mongodb:
+      host: 10.18.33.110
+      database: test
+      port: 27017
