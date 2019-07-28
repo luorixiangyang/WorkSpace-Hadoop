@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Dubbo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Dubbo/dubbo-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Dubbo/springboot-dubbo-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Dubbo/springboot-dubbo-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/incubator-dubbo-admin-0.2.0" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/incubator-dubbo-admin-0.2.0/dubbo-admin-distribution" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/incubator-dubbo-admin-0.2.0/dubbo-admin-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/incubator-dubbo-admin-0.2.0/dubbo-admin-ui" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nettyVipIm" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/proxyStudy" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/webflux-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/websocket-chat" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zookeeper-demo" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,1 @@
+dubboLogFilter=com.yongliang.dubbo.provider.filter.DubboLogFilter

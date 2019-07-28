@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/01study_ThreadBase/01study_ThreadBase.iml" filepath="$PROJECT_DIR$/01study_ThreadBase/01study_ThreadBase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02study_Tool/02study_Tool.iml" filepath="$PROJECT_DIR$/02study_Tool/02study_Tool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04study_Tool/04study_Tool.iml" filepath="$PROJECT_DIR$/04study_Tool/04study_Tool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dubbo/Dubbo.iml" filepath="$PROJECT_DIR$/Dubbo/Dubbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dubbo/dubbo-api/dubboapi.iml" filepath="$PROJECT_DIR$/Dubbo/dubbo-api/dubboapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nettyVipIm/nettyVipIm.iml" filepath="$PROJECT_DIR$/nettyVipIm/nettyVipIm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/proxyStudy/proxyStudy.iml" filepath="$PROJECT_DIR$/proxyStudy/proxyStudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dubbo/springboot-dubbo-consumer/springboot-dubbo-consumer.iml" filepath="$PROJECT_DIR$/Dubbo/springboot-dubbo-consumer/springboot-dubbo-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dubbo/springboot-dubbo-provider/springboot-dubbo-provider.iml" filepath="$PROJECT_DIR$/Dubbo/springboot-dubbo-provider/springboot-dubbo-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webflux-demo/webflux-demo.iml" filepath="$PROJECT_DIR$/webflux-demo/webflux-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/websocket-chat/websocket-chat.iml" filepath="$PROJECT_DIR$/websocket-chat/websocket-chat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zookeeper-demo/zookeeper-demo.iml" filepath="$PROJECT_DIR$/zookeeper-demo/zookeeper-demo.iml" />
+    </modules>
+  </component>
+</project>

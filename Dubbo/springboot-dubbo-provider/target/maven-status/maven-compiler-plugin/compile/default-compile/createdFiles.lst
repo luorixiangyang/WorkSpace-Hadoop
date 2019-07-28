@@ -1,0 +1,3 @@
+com\yongliang\dubbo\provider\filter\DubboLogFilter.class
+com\yongliang\dubbo\provider\filter\InvokeLog.class
+com\yongliang\dubbo\provider\SpringbootDubboProviderApplication.class

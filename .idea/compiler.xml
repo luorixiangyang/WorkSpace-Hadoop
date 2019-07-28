@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springboot-dubbo-provider" />
+        <module name="webflux-demo" />
+        <module name="proxyStudy" />
+        <module name="zookeeper-demo" />
+        <module name="nettyVipIm" />
+        <module name="springboot-dubbo-consumer" />
+        <module name="websocket-chat" />
+        <module name="dubboapi" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Dubbo" target="1.5" />
+      <module name="dubbo-admin" target="1.8" />
+      <module name="dubbo-admin-distribution" target="1.8" />
+      <module name="dubbo-admin-server" target="1.8" />
+      <module name="dubbo-admin-ui" target="1.8" />
+      <module name="dubbo-api" target="1.8" />
+      <module name="dubbo-consumer" target="1.8" />
+      <module name="dubbo-provider" target="1.8" />
+      <module name="dubboapi" target="1.5" />
+      <module name="nettyVipIm" target="1.5" />
+      <module name="proxyStudy" target="1.5" />
+      <module name="springboot-dubbo-api" target="1.5" />
+      <module name="springboot-dubbo-consumer" target="1.8" />
+      <module name="springboot-dubbo-provider" target="1.8" />
+      <module name="springbootDubbo" target="1.5" />
+      <module name="webflux-demo" target="1.8" />
+      <module name="websocket-chat" target="1.8" />
+      <module name="zookeeper-demo" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dubbo-api" options="-parameters" />
+      <module name="dubbo-consumer" options="-parameters" />
+      <module name="dubbo-provider" options="-parameters" />
+      <module name="springboot-dubbo-consumer" options="-parameters" />
+      <module name="springboot-dubbo-provider" options="-parameters" />
+      <module name="webflux-demo" options="-parameters" />
+      <module name="websocket-chat" options="-parameters" />
+      <module name="zookeeper-demo" options="-parameters" />
+    </option>
+  </component>
+</project>
