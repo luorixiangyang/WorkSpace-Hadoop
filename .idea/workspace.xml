@@ -1,33 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80c241c1-fdd8-411e-8b1e-3335ebbb83fb" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/zookeeper-demo/target/" />
-    <ignored path="$PROJECT_DIR$/nettyVipIm/target/" />
-    <ignored path="$PROJECT_DIR$/webflux-demo/target/" />
-    <ignored path="$PROJECT_DIR$/proxyStudy/target/" />
-    <ignored path="$PROJECT_DIR$/dubbo-server/target/" />
-    <ignored path="$PROJECT_DIR$/springboot-dubbo/dubbo-server/target/" />
-    <ignored path="$PROJECT_DIR$/springboot-dubbo/dubbo-client/target/" />
-    <ignored path="$PROJECT_DIR$/springboot-dubbo/target/" />
-    <ignored path="$PROJECT_DIR$/springboot-dubbo/springboot-dubbo-server/target/" />
-    <ignored path="$PROJECT_DIR$/springboot-dubbo/springboot-dubbo-client/target/" />
-    <ignored path="$PROJECT_DIR$/Dubbo/target/" />
-    <ignored path="$PROJECT_DIR$/Dubbo/DubboApi/target/" />
-    <ignored path="$PROJECT_DIR$/Dubbo/DubboConsumer/target/" />
-    <ignored path="$PROJECT_DIR$/Dubbo/DubboProvider/target/" />
-    <ignored path="$PROJECT_DIR$/Dubbo/dubbo-api/target/" />
-    <ignored path="$PROJECT_DIR$/Dubbo/dubbo-provider/target/" />
-    <ignored path="$PROJECT_DIR$/dubbo-provider/target/" />
-    <ignored path="$PROJECT_DIR$/incubator-dubbo-admin-0.2.0/target/" />
-    <ignored path="$PROJECT_DIR$/incubator-dubbo-admin-0.2.0/dubbo-admin-ui/target/" />
-    <ignored path="$PROJECT_DIR$/incubator-dubbo-admin-0.2.0/dubbo-admin-server/target/" />
-    <ignored path="$PROJECT_DIR$/incubator-dubbo-admin-0.2.0/dubbo-admin-distribution/target/" />
-    <ignored path="$PROJECT_DIR$/Dubbo/dubbo-consumer/target/" />
-    <ignored path="$PROJECT_DIR$/Dubbo/springboot-dubbo-consumer/target/" />
-    <ignored path="$PROJECT_DIR$/Dubbo/springboot-dubbo-provider/target/" />
-    <ignored path="$PROJECT_DIR$/Dubbo/springboot-dubbo-api/target/" />
-    <ignored path="$PROJECT_DIR$/websocket-chat/target/" />
+    <list default="true" id="80c241c1-fdd8-411e-8b1e-3335ebbb83fb" name="Default Changelist" comment="增加在线webSocket聊天实例">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager-statisic.zip" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,20 +13,6 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/websocket-chat/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="73" column="45" lean-forward="true" selection-start-line="73" selection-start-column="45" selection-end-line="74" selection-end-column="37" />
-            </state>
-          </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -73,63 +36,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/springboot-dubbo/dubbo-server/src/main/java/com/yongliang/dubbo/server/dubbo/CityDubboService.java" />
-        <option value="$PROJECT_DIR$/springboot-dubbo/dubbo-server/src/main/java/com/yongliang/dubbo/server/dubbo/impl/CityDubboServiceImpl.java" />
-        <option value="$PROJECT_DIR$/springboot-dubbo/dubbo-server/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot-dubbo/dubbo-client/src/main/java/com/yongliang/dubbo/server/dubbo/CityDubboConsumerService.java" />
-        <option value="$PROJECT_DIR$/springboot-dubbo/dubbo-client/src/main/java/com/yongliang/dubbo/server/DubboClientApplication.java" />
-        <option value="$PROJECT_DIR$/springboot-dubbo/dubbo-client/src/main/java/org/spring/springboot/dubbo/CityDubboConsumerService.java" />
-        <option value="$PROJECT_DIR$/springboot-dubbo/dubbo-client/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/springboot-dubbo/dubbo-server/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/nettyVipIm/src/main/java/com/dongnao/server/protocol/MessageCodec.java" />
-        <option value="$PROJECT_DIR$/Dubbo/DubboProvider/src/main/resources/provider.xml" />
-        <option value="$PROJECT_DIR$/Dubbo/dubbo-api/src/main/java/com/yongliang/dubbo/service/RemoteUserService.java" />
-        <option value="$PROJECT_DIR$/Dubbo/dubbo-provider/src/main/java/com/yongliang/dubbo/provider/DubboProviderApplication.java" />
-        <option value="$PROJECT_DIR$/Dubbo/dubbo-consumer/src/main/java/com/yongliang/dubbo/dubboconsumer/DubboConsumerApplication.java" />
-        <option value="$PROJECT_DIR$/Dubbo/dubbo-consumer/src/main/java/com/yongliang/dubbo/dubboconsumer/controller/remote.java" />
-        <option value="$PROJECT_DIR$/Dubbo/dubbo-consumer/src/main/java/com/yongliang/dubbo/dubboconsumer/controller/remoteUserRest.java" />
-        <option value="$PROJECT_DIR$/Dubbo/dubbo-consumer/src/main/java/com/yongliang/dubbo/dubboconsumer/controller/RemoteUserRest.java" />
-        <option value="$PROJECT_DIR$/Dubbo/dubbo-provider/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/Dubbo/dubbo-consumer/pom.xml" />
-        <option value="$PROJECT_DIR$/Dubbo/dubbo-consumer/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/Dubbo/dubbo-provider/src/main/java/com/yongliang/dubbo/dubboprovider/service/impl/RemoteUserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/Dubbo/dubbo-provider/src/main/java/com/test/dubbo/provider/apiService/DubboTestApiService.java" />
-        <option value="$PROJECT_DIR$/Dubbo/springboot-dubbo-provider/src/main/java/com/yongliang/dubbo/provider/apiService/DubboTestApiService.java" />
-        <option value="$PROJECT_DIR$/Dubbo/springboot-dubbo-consumer/src/main/java/com/test/dubbo/cunsumer/controller/TestController.java" />
-        <option value="$PROJECT_DIR$/Dubbo/dubbo-api/pom.xml" />
-        <option value="$PROJECT_DIR$/Dubbo/dubbo-provider/src/main/java/com/yongliang/dubbo/dubboprovider/filter/DubboLogFilter.java" />
-        <option value="$PROJECT_DIR$/Dubbo/dubbo-provider/src/main/resources/META-INF/dubbo/com.alibaba.dubbo.rpc.Filter" />
-        <option value="$PROJECT_DIR$/Dubbo/dubbo-provider/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/Dubbo/dubbo-provider/src/main/java/com/yongliang/dubbo/dubboprovider/DubboProviderApplication.java" />
-        <option value="$PROJECT_DIR$/Dubbo/dubbo-provider/pom.xml" />
-        <option value="$PROJECT_DIR$/Dubbo/dubbo-provider/src/main/java/com/yongliang/dubbo/dubboprovider/service/impl/RemoteServiceimpl.java" />
-        <option value="$PROJECT_DIR$/Dubbo/dubbo-api/src/main/java/com/yongliang/dubbo/api/RemoteUserService.java" />
-        <option value="$PROJECT_DIR$/Dubbo/springboot-dubbo-provider/src/main/java/com/yongliang/dubbo/provider/SpringbootDubboProviderApplication.java" />
-        <option value="$PROJECT_DIR$/Dubbo/springboot-dubbo-provider/src/main/java/com/yongliang/dubbo/provider/filter/InvokeLog.java" />
-        <option value="$PROJECT_DIR$/Dubbo/springboot-dubbo-provider/src/main/resources/META-INF/dubbo/com.alibaba.dubbo.rpc.Filter" />
-        <option value="$PROJECT_DIR$/Dubbo/springboot-dubbo-provider/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/Dubbo/springboot-dubbo-consumer/src/main/java/com/yongliang/dubbo/consumer/rest/RemoteUserRest.java" />
-        <option value="$PROJECT_DIR$/Dubbo/springboot-dubbo-consumer/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/Dubbo/springboot-dubbo-consumer/src/main/java/com/yongliang/dubbo/consumer/SpringbootDubboConsumerApplication.java" />
-        <option value="$PROJECT_DIR$/Dubbo/springboot-dubbo-provider/src/main/java/com/yongliang/dubbo/provider/service/impl/RemoteServiceimpl.java" />
-        <option value="$PROJECT_DIR$/Dubbo/springboot-dubbo-provider/pom.xml" />
-        <option value="$PROJECT_DIR$/Dubbo/pom.xml" />
-        <option value="$PROJECT_DIR$/Dubbo/springboot-dubbo-consumer/pom.xml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/websocket-chat/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/websocket-chat/src/main/java/com/yongliang/websocket/chat/config/WebSocketConfig.java" />
-        <option value="$PROJECT_DIR$/websocket-chat/pom.xml" />
-        <option value="$PROJECT_DIR$/websocket-chat/src/main/java/com/yongliang/websocket/chat/entity/Message.java" />
-        <option value="$PROJECT_DIR$/websocket-chat/src/main/java/com/yongliang/websocket/chat/server/WebSocketChatServer.java" />
-        <option value="$PROJECT_DIR$/websocket-chat/src/main/resources/templates/login.html" />
-        <option value="$PROJECT_DIR$/websocket-chat/src/main/resources/templates/chat.html" />
-        <option value="$PROJECT_DIR$/websocket-chat/src/main/java/com/yongliang/websocket/chat/controller/LoginController.java" />
-      </list>
-    </option>
-  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -142,12 +48,6 @@
         <option value="apache-release" />
       </list>
     </option>
-  </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand />
-      <select />
-    </treeState>
   </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
@@ -172,24 +72,8 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1928" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
-  </component>
+  <component name="ProjectId" id="1Od0k7sWrvPM32nuu1ak2jJqRki" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <flattenPackages ProjectPane="false" />
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
@@ -199,6 +83,7 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552572263590" />
@@ -371,6 +256,7 @@
       <workItem from="1554888194220" duration="2715000" />
       <workItem from="1561637887265" duration="1965000" />
       <workItem from="1563066733693" duration="1327000" />
+      <workItem from="1564292362690" duration="239000" />
     </task>
     <task id="LOCAL-00001" summary="增加在线webSocket聊天实例">
       <created>1563066857476</created>
@@ -381,97 +267,6 @@
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79510000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18763326" />
-      <window_info id="ZooKeeper" order="1" weight="0.33724654" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="3" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="UI Designer" order="6" />
-      <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info id="Web" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Flutter Performance" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49893278" weight="0.43930635" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.27630058" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="8" />
-      <window_info anchor="bottom" id="Spring" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Docker" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5010672" side_tool="true" weight="0.43930635" />
-      <window_info anchor="bottom" id="Statistic" order="13" />
-      <window_info anchor="bottom" id="Java Enterprise" order="14" />
-      <window_info anchor="bottom" id="Database Changes" order="15" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="16" visible="true" weight="0.32911393" />
-      <window_info anchor="bottom" id="Messages" order="17" weight="0.32796317" />
-      <window_info anchor="bottom" id="Run Dashboard" order="18" sideWeight="0.4994664" weight="0.56156504" />
-      <window_info anchor="right" id="Flutter Inspector" order="0" />
-      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
-      <window_info anchor="right" id="Flutter Outline" order="2" weight="0.32977587" />
-      <window_info anchor="right" id="Ant Build" order="3" weight="0.2497332" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="5" weight="0.32977587" />
-      <window_info anchor="right" id="Palette" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="10" />
-      <window_info anchor="right" id="Bean Validation" order="11" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18763326" />
-      <window_info id="ZooKeeper" order="1" weight="0.33724654" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="3" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="UI Designer" order="6" />
-      <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info id="Web" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Flutter Performance" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49893278" weight="0.43930635" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.27630058" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="8" />
-      <window_info anchor="bottom" id="Spring" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Docker" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5010672" side_tool="true" weight="0.43930635" />
-      <window_info anchor="bottom" id="Statistic" order="13" />
-      <window_info anchor="bottom" id="Java Enterprise" order="14" />
-      <window_info anchor="bottom" id="Database Changes" order="15" />
-      <window_info anchor="bottom" id="Version Control" order="16" />
-      <window_info anchor="bottom" id="Messages" order="17" weight="0.32796317" />
-      <window_info anchor="bottom" id="Run Dashboard" order="18" sideWeight="0.4994664" weight="0.56156504" />
-      <window_info anchor="right" id="Flutter Inspector" order="0" />
-      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
-      <window_info anchor="right" id="Flutter Outline" order="2" weight="0.32977587" />
-      <window_info anchor="right" id="Ant Build" order="3" weight="0.2497332" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="5" weight="0.32977587" />
-      <window_info anchor="right" id="Palette" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="10" />
-      <window_info anchor="right" id="Bean Validation" order="11" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -486,13 +281,11 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/springboot-dubbo/dubbo-client/src/main/java/org/spring/springboot/dubbo/CityDubboConsumerService.java</url>
           <line>18</line>
-          <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Dubbo/dubbo-consumer/src/main/java/com/yongliang/dubbo/dubboconsumer/controller/RemoteUserRest.java</url>
           <line>21</line>
-          <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
@@ -508,350 +301,5 @@
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Dubbo/dubbo-provider/src/main/java/com/yongliang/dubbo/dubboprovider/service/impl/RemoteUserServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/Dubbo/dubbo-provider/src/main/java/com/test/dubbo/provider/apiService/DubboTestApiService.java" />
-    <entry file="file://$PROJECT_DIR$/Dubbo/dubbo-api/src/main/java/com/yongliang/dubbo/service/RemoteUserService.java" />
-    <entry file="file://$PROJECT_DIR$/Dubbo/springboot-dubbo-api/.settings/org.eclipse.core.resources.prefs" />
-    <entry file="file://$PROJECT_DIR$/Dubbo/springboot-dubbo-api/src/main/java/com/yongliangdubbo/api/DubboTestApi.java" />
-    <entry file="file://$PROJECT_DIR$/Dubbo/springboot-dubbo-api/src/test/java/com/yongliangdubbo/api/DubboTestApiTest.java" />
-    <entry file="file://$PROJECT_DIR$/Dubbo/springboot-dubbo-api/pom.xml" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.2.RELEASE/spring-webmvc-5.1.2.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="902" selection-start-line="902" selection-end-line="902" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dubbo/springboot-dubbo-consumer/src/main/java/com/test/dubbo/cunsumer/SpringbootDubboConsumerApplication.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.2.RELEASE/spring-web-5.1.2.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2627">
-          <caret line="214" selection-start-line="214" selection-end-line="214" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dubbo/springboot-dubbo-consumer/src/main/java/com/test/dubbo/cunsumer/controller/TestController.java" />
-    <entry file="file://$PROJECT_DIR$/Dubbo/springboot-dubbo-provider/src/main/java/com/yongliang/dubbo/provider/apiService/DubboTestApiService.java" />
-    <entry file="file://$PROJECT_DIR$/Dubbo/dubbo-provider/src/main/resources/META-INF/dubbo/com.alibaba.dubbo.rpc.Filter" />
-    <entry file="file://$PROJECT_DIR$/Dubbo/dubbo-provider/src/main/java/com/yongliang/dubbo/dubboprovider/filter/DubboLogFilter.java" />
-    <entry file="file://$PROJECT_DIR$/Dubbo/dubbo-provider/src/main/java/com/yongliang/dubbo/dubboprovider/filter/InvokeLog.java" />
-    <entry file="file://$PROJECT_DIR$/Dubbo/dubbo-provider/src/main/resources/application.properties" />
-    <entry file="file://$PROJECT_DIR$/Dubbo/dubbo-provider/src/main/java/com/yongliang/dubbo/dubboprovider/DubboProviderApplication.java" />
-    <entry file="file://$PROJECT_DIR$/Dubbo/dubbo-provider/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/Dubbo/dubbo-provider/src/main/java/com/yongliang/dubbo/dubboprovider/service/impl/RemoteServiceimpl.java" />
-    <entry file="file://$PROJECT_DIR$/Dubbo/dubbo-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dubbo/springboot-dubbo-provider/src/main/java/com/yongliang/dubbo/provider/filter/InvokeLog.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dubbo/springboot-dubbo-provider/src/main/java/com/yongliang/dubbo/provider/filter/DubboLogFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/com/alibaba/spring/boot/dubbo-spring-boot-starter/2.0.0/dubbo-spring-boot-starter-2.0.0.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="25" column="65" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dubbo/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dubbo/springboot-dubbo-provider/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="91" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dubbo/springboot-dubbo-provider/src/main/java/com/yongliang/dubbo/provider/service/impl/RemoteServiceimpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dubbo/springboot-dubbo-consumer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="77" selection-end-column="10" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dubbo/springboot-dubbo-consumer/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="7" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dubbo/dubbo-api/src/main/java/com/yongliang/dubbo/api/RemoteUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dubbo/springboot-dubbo-provider/src/main/resources/META-INF/dubbo/com.alibaba.dubbo.rpc.Filter">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dubbo/springboot-dubbo-provider/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dubbo/springboot-dubbo-provider/src/main/java/com/yongliang/dubbo/provider/SpringbootDubboProviderApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dubbo/springboot-dubbo-consumer/src/main/java/com/yongliang/dubbo/consumer/SpringbootDubboConsumerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/Dubbo/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dubbo/springboot-dubbo-provider/.jpmignore" />
-    <entry file="file://$PROJECT_DIR$/Dubbo/springboot-dubbo-provider/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dubbo/springboot-dubbo-consumer/src/main/java/com/yongliang/dubbo/consumer/rest/RemoteUserRest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="27" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-websocket/5.1.6.RELEASE/spring-websocket-5.1.6.RELEASE.jar!/org/springframework/web/socket/server/standard/ServerEndpointExporter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocket-chat/src/main/java/com/yongliang/websocket/chat/config/WebSocketConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocket-chat/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="73" column="45" lean-forward="true" selection-start-line="73" selection-start-column="45" selection-end-line="74" selection-end-column="37" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocket-chat/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocket-chat/src/main/java/com/yongliang/websocket/chat/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="33" column="53" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocket-chat/src/main/java/com/yongliang/websocket/chat/entity/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocket-chat/src/main/java/com/yongliang/websocket/chat/SpringbootWebsocketChatApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocket-chat/src/main/java/com/yongliang/websocket/chat/server/WebSocketChatServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1378">
-          <caret line="63" column="49" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocket-chat/src/main/resources/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="806">
-          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocket-chat/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocket-chat/src/main/resources/static/img/login-bg.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websocket-chat/src/main/resources/templates/chat.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3666">
-          <caret line="141" column="9" selection-start-line="141" selection-start-column="9" selection-end-line="141" selection-end-column="9" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.3813364" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Spring</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.3813364" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.3813364" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.3813364" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>dubboapi</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.3813364" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.3813364" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
