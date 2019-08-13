@@ -1,0 +1,16 @@
+server:
+  servlet:
+    context-path: /boot-elk
+  port: 8080
+spring:
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: 192.168.92.50:9300
+  elasticsearch:
+    rest:
+      uris: http://192.168.92.50:9200
+  application:
+    name: boot-elk
+initial-import:
+  enabled: false
