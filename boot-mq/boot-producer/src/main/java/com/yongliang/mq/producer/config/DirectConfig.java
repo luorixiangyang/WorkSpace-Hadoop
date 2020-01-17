@@ -7,6 +7,7 @@ import org.springframework.amqp.core.Queue;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
 /**
  * Direct点对点配置
@@ -14,12 +15,12 @@ import org.springframework.context.annotation.Configuration;
  * @author zhangyongliang
  * @create 2019-10-28 15:19
  **/
-@Configuration
+@Component
 public class DirectConfig {
     final static String QUEUE_NAME = "direct"; //队列名称
     final static String EXCHANGE_NAME = "direct"; //交换器名称
     @Bean
-    public Queue queue() {
+    public Queue directQueue() {
         // 声明队列 参数一：队列名称；参数二：是否持久化
         return new Queue(DirectConfig.QUEUE_NAME, false);
     }
@@ -31,7 +32,7 @@ public class DirectConfig {
     }
     // 绑定“direct”队列到上面配置的“direct”路由器
     @Bean
-    Binding binding(Queue queue, DirectExchange exchange){
-        return BindingBuilder.bind(queue).to(exchange).with(DirectConfig.QUEUE_NAME);
+    Binding bindingExchangeDirectQueue(@Qualifier("directQueue") Queue directQueue, DirectExchange directExchange){
+        return BindingBuilder.bind(directQueue).to(directExchange).with(DirectConfig.QUEUE_NAME);
     }
 }

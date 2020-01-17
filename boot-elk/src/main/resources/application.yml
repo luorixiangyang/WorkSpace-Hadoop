@@ -12,5 +12,10 @@ spring:
       uris: http://192.168.92.50:9200
   application:
     name: boot-elk
+  redis:
+    database: 0
+    host: 10.18.33.158
+    port: 6379
+    password: 
 initial-import:
   enabled: false

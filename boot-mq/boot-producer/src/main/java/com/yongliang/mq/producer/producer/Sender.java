@@ -1,7 +1,12 @@
 package com.yongliang.mq.producer.producer;
 
+import cn.hutool.core.date.DateUtil;
+import com.yongliang.mq.producer.config.DelayedConfig;
 import com.yongliang.mq.producer.config.FanoutConfig;
+import org.springframework.amqp.AmqpException;
 import org.springframework.amqp.core.AmqpTemplate;
+import org.springframework.amqp.core.Message;
+import org.springframework.amqp.core.MessagePostProcessor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -29,5 +34,11 @@ public class Sender {
         rabbitmqTemplate.convertAndSend(FanoutConfig.EXCHANGE_NAME,FanoutConfig.QUEUE_NAME2, message);
     }
 
-
+    public void sendDelayMsg(String msg) {
+        System.out.println("发送时间：" + DateUtil.now());
+        rabbitmqTemplate.convertAndSend(DelayedConfig.DELAY_EXCHANGE_NAME, DelayedConfig.DELAY_QUEUE_NAME, msg, message -> {
+            message.getMessageProperties().setHeader("x-delay", 3000);
+            return message;
+        });
+    }
 }

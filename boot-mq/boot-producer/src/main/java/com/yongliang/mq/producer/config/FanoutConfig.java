@@ -5,6 +5,7 @@ import org.springframework.amqp.core.BindingBuilder;
 import org.springframework.amqp.core.FanoutExchange;
 import org.springframework.amqp.core.Queue;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 /**
@@ -13,7 +14,7 @@ import org.springframework.stereotype.Component;
  * @author zhangyongliang
  * @create 2019-10-28 15:53
  **/
-@Component
+@Configuration
 public class FanoutConfig {
     //队列名称
    public  final static String QUEUE_NAME = "fanout";

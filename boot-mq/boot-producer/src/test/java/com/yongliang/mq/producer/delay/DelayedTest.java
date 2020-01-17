@@ -1,4 +1,4 @@
-package com.yongliang.mq.producer.fanout;
+package com.yongliang.mq.producer.delay;
 
 import cn.hutool.core.date.DateUtil;
 import com.yongliang.mq.producer.BootProducerApplication;
@@ -9,22 +9,20 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 /**
  * @author zhangyongliang
- * @create 2019-10-28 16:00
+ * @create 2019-10-28 17:50
  **/
-
-public class FanoutTest {
+@RunWith(SpringRunner.class)
+@SpringBootTest(classes = BootProducerApplication.class)
+public class DelayedTest {
     @Autowired
     private Sender sender;
+
     @Test
     public void Test() throws InterruptedException {
-        SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd");
-        sender.sendFanoutMsg1("Time1 => " + DateUtil.now());
-        sender.sendFanoutMsg2("Date2 => " + DateUtil.now());
+        System.out.println(DateUtil.now());
+        sender.sendDelayMsg("Hi Admin.");
+//        Thread.sleep(5 * 1000); //等待接收程序执行之后，再退出测试
     }
-
 }

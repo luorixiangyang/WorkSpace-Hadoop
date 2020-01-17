@@ -10,9 +10,14 @@ import org.junit.runners.MethodSorters;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.util.StopWatch;
 import org.testcontainers.elasticsearch.ElasticsearchContainer;
 
 import java.util.List;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.CyclicBarrier;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * @author zhangyongliang
@@ -62,4 +67,5 @@ public class EmployeeRepositoryTest {
         List<Employee> employees = repository.findByName("John Smith");
         Assert.assertTrue(employees.size() > 0);
     }
+
 }
