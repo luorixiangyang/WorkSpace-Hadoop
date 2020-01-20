@@ -1,0 +1,7 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /netty-client
+netty:
+  port: 9090
+  host: 10.18.33.100

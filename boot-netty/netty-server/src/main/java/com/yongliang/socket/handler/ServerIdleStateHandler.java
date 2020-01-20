@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * 空闲检测
  *
- * @author pjmike
+ * @author zhangyongliang
  * @create 2018-10-25 16:21
  */
 @Slf4j
