@@ -7,6 +7,8 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import lombok.extern.slf4j.Slf4j;
 
+import java.net.InetSocketAddress;
+
 /**
  * 服务处理类
  *
@@ -20,10 +22,24 @@ public class NettyServerHandler extends SimpleChannelInboundHandler<MessageBase.
     protected void channelRead0(ChannelHandlerContext channelHandlerContext, MessageBase.Message message) throws Exception {
         if (message.getCmd().equals(MessageBase.Message.CommandType.HEARTBEAT_REQUEST)) {
 //            log.info("收到客户端发来的心跳消息：{}", message.toString());
-            //回应pong
             channelHandlerContext.writeAndFlush(new HeartbeatResponsePacket());
         } else if (message.getCmd().equals(MessageBase.Message.CommandType.NORMAL)) {
-            log.info("收到客户端的业务消息：{}",message.toString());
+            channelHandlerContext.writeAndFlush(message);
+            log.info("收到客户端的业务消息：{}", message.toString());
         }
     }
+
+    @Override
+    public void channelActive(ChannelHandlerContext ctx) throws Exception {
+        InetSocketAddress insocket = (InetSocketAddress) ctx.channel().remoteAddress();
+        String clientIp = insocket.getAddress().getHostAddress();
+        log.info("收到客户端连接IP:{}", clientIp);
+    }
+
+    @Override
+    public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
+        log.error("Netty-Server捕获的异常：{}", cause.getMessage());
+        ctx.channel().close();
+    }
+
 }
