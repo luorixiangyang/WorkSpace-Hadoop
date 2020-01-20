@@ -19,7 +19,7 @@ public class NettyServerHandler extends SimpleChannelInboundHandler<MessageBase.
     @Override
     protected void channelRead0(ChannelHandlerContext channelHandlerContext, MessageBase.Message message) throws Exception {
         if (message.getCmd().equals(MessageBase.Message.CommandType.HEARTBEAT_REQUEST)) {
-            log.info("收到客户端发来的心跳消息：{}", message.toString());
+//            log.info("收到客户端发来的心跳消息：{}", message.toString());
             //回应pong
             channelHandlerContext.writeAndFlush(new HeartbeatResponsePacket());
         } else if (message.getCmd().equals(MessageBase.Message.CommandType.NORMAL)) {
