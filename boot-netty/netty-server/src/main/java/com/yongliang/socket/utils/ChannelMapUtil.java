@@ -46,7 +46,7 @@ public class ChannelMapUtil {
             return -1;
         }
     }
-
+    //根据channelContext移除channel
     public static int removeChannelContext(ChannelHandlerContext ctx) {
         if (CollectionUtil.isNotEmpty(channelHashMap)) {
             for (Map.Entry<String, ChannelHandlerContext> channelInfo : channelHashMap.entrySet()) {
