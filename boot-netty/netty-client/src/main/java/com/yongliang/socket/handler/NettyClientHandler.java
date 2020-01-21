@@ -1,9 +1,12 @@
 package com.yongliang.socket.handler;
 
+import cn.hutool.core.date.DateUtil;
 import com.yongliang.socket.protobuf.MessageBase;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import lombok.extern.slf4j.Slf4j;
+
+import java.util.UUID;
 
 /**
  * netty客户端处理实现
