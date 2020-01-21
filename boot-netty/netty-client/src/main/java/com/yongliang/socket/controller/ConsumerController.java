@@ -25,7 +25,6 @@ public class ConsumerController {
                 .setContent("中华人民共和国")
                 .setRequestId("LZ20151203093957").build();
         nettyClient.sendMsg(message);
-
         return "send ok";
     }
 }

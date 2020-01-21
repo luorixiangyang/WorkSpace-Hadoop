@@ -29,7 +29,8 @@ public class ProducerController {
         ChannelHandlerContext handlerContext = ChannelMapUtil.getChannelByName("LZ20151203093957");
         if (handlerContext != null) {
             boolean sendFlag = nettyServer.sendClientMsg(handlerContext.channel(), message);
+            return "send ok";
         }
-        return "send ok";
+        return "send Failed";
     }
 }
