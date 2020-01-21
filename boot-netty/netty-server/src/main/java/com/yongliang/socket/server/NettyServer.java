@@ -58,6 +58,10 @@ public class NettyServer {
                 .childOption(ChannelOption.TCP_NODELAY, true)
                 //设置为长连接
                 .childOption(ChannelOption.SO_KEEPALIVE, true)
+                //用于操作接收缓冲区和发送缓冲区
+                .childOption(ChannelOption.SO_RCVBUF,256)
+                //用于操作接收缓冲区和发送缓冲区
+                .childOption(ChannelOption.SO_SNDBUF,256)
                 //将小的数据包包装成更大的帧进行传送，提高网络的负载
                 .childHandler(new NettyServerHandlerInitializer());
         ChannelFuture future = bootstrap.bind().sync();
