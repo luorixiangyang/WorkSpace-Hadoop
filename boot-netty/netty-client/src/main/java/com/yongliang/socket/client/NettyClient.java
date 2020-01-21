@@ -52,7 +52,6 @@ public class NettyClient {
                 log.info("连接失败，进行断线重连");
                 channelFuture.channel().eventLoop().schedule(() -> start(), 20, TimeUnit.SECONDS);
             }
-
         });
         socketChannel = (SocketChannel) future.channel();
     }
