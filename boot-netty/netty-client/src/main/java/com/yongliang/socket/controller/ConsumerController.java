@@ -1,13 +1,10 @@
 package com.yongliang.socket.controller;
 
-import com.google.protobuf.TextFormat;
 import com.yongliang.socket.client.NettyClient;
 import com.yongliang.socket.protobuf.MessageBase;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.UUID;
 
 /**
  * @author zhangyongliang
