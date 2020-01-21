@@ -7,8 +7,6 @@ import com.yongliang.socket.utils.ChannelMapUtil;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
-import io.netty.handler.timeout.IdleState;
-import io.netty.handler.timeout.IdleStateEvent;
 import lombok.extern.slf4j.Slf4j;
 
 import java.net.InetSocketAddress;
@@ -54,19 +52,6 @@ public class NettyServerHandler extends SimpleChannelInboundHandler<MessageBase.
     @Override
     public void channelInactive(ChannelHandlerContext ctx) throws Exception {
         ChannelMapUtil.removeChannelContext(ctx);
-    }
-
-
-    @Override
-    public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
-        super.userEventTriggered(ctx, evt);
-        if (evt instanceof IdleStateEvent) {
-            IdleStateEvent event = (IdleStateEvent) evt;
-            if (event.state().equals(IdleState.READER_IDLE)) {
-                //标志该链接已经close 了 
-                ctx.close();
-            }
-        }
     }
 
     @Override
