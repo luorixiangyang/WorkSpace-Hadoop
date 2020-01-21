@@ -50,7 +50,7 @@ public class NettyClient {
                 log.info("连接Netty服务端成功");
             } else {
                 log.info("连接失败，进行断线重连");
-                channelFuture.channel().eventLoop().schedule(() -> start(), 20, TimeUnit.SECONDS);
+                channelFuture.channel().eventLoop().schedule(() -> start(), 10, TimeUnit.SECONDS);
             }
         });
         socketChannel = (SocketChannel) future.channel();
