@@ -24,17 +24,17 @@ import java.net.InetSocketAddress;
 public class NettyServerHandler extends SimpleChannelInboundHandler<MessageBase.Message> {
     @Override
     protected void channelRead0(ChannelHandlerContext channelHandlerContext, MessageBase.Message message) throws Exception {
-
+        //实现Channel统一管理和服务端定向向客户端发送消息
+        String hosCode = message.getRequestIdBytes().toStringUtf8();
+        if (ChannelMapUtil.getChannelByName(hosCode) == null) {
+            log.info("客户端加入了：{}", message.getRequestIdBytes().toStringUtf8());
+            ChannelMapUtil.addChannel(hosCode, channelHandlerContext);
+        }
         if (message.getCmd().equals(MessageBase.Message.CommandType.HEARTBEAT_REQUEST)) {
-//            log.info("收到客户端发来的心跳消息：{}", message.toString());
+            log.info("收到客户端发来的心跳消息：{}", message.toString());
             channelHandlerContext.writeAndFlush(new HeartbeatResponsePacket());
         } else if (message.getCmd().equals(MessageBase.Message.CommandType.NORMAL)) {
-            //实现Channel统一管理和服务端定向向客户端发送消息
-            String hosCode = message.getRequestIdBytes().toStringUtf8();
-            if (ChannelMapUtil.getChannelByName(hosCode) == null) {
-                log.info("客户端加入了：{}", message.getRequestIdBytes().toStringUtf8());
-                ChannelMapUtil.addChannel(hosCode, channelHandlerContext);
-            }
+            //接收的消息为普通消息
             MessageBase.Message result = new MessageBase.Message()
                     .toBuilder().setCmd(MessageBase.Message.CommandType.NORMAL)
                     .setContent("这是结果消息：" + DateUtil.date())
