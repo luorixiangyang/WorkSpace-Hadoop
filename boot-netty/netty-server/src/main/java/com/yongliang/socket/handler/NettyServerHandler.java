@@ -1,5 +1,6 @@
 package com.yongliang.socket.handler;
 
+import cn.hutool.core.collection.CollectionUtil;
 import cn.hutool.core.date.DateUtil;
 import com.yongliang.socket.protobuf.MessageBase;
 import com.yongliang.socket.protobuf.message.HeartbeatResponsePacket;
