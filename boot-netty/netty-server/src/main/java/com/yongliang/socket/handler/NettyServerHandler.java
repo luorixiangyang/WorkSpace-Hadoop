@@ -1,5 +1,7 @@
 package com.yongliang.socket.handler;
 
+import cn.hutool.core.date.DateUtil;
+import com.yongliang.socket.utils.ChannelMapUtil;
 import com.yongliang.socket.protobuf.MessageBase;
 import com.yongliang.socket.protobuf.message.HeartbeatResponsePacket;
 import io.netty.channel.ChannelHandler;
@@ -20,12 +22,23 @@ import java.net.InetSocketAddress;
 public class NettyServerHandler extends SimpleChannelInboundHandler<MessageBase.Message> {
     @Override
     protected void channelRead0(ChannelHandlerContext channelHandlerContext, MessageBase.Message message) throws Exception {
+
         if (message.getCmd().equals(MessageBase.Message.CommandType.HEARTBEAT_REQUEST)) {
 //            log.info("收到客户端发来的心跳消息：{}", message.toString());
             channelHandlerContext.writeAndFlush(new HeartbeatResponsePacket());
         } else if (message.getCmd().equals(MessageBase.Message.CommandType.NORMAL)) {
-            channelHandlerContext.writeAndFlush(message);
-            log.info("收到客户端的业务消息：{}", message.toString());
+            //实现Channel统一管理和服务端定向向客户端发送消息
+            String hosCode = message.getRequestIdBytes().toStringUtf8();
+            if (ChannelMapUtil.getChannelByName(hosCode) == null) {
+                log.info("客户端加入了：{}",message.getRequestIdBytes().toStringUtf8());
+                ChannelMapUtil.addChannel(hosCode, channelHandlerContext);
+            }
+            MessageBase.Message result = new MessageBase.Message()
+                    .toBuilder().setCmd(MessageBase.Message.CommandType.NORMAL)
+                    .setContent("这是结果消息：" + DateUtil.date())
+                    .setRequestId("LZ20151203093957").build();
+            channelHandlerContext.writeAndFlush(result);
+            log.info("收到客户端的业务消息：{}", message.getRequestIdBytes().toStringUtf8() + "-" + message.getContentBytes().toStringUtf8());
         }
     }
 
@@ -36,6 +49,10 @@ public class NettyServerHandler extends SimpleChannelInboundHandler<MessageBase.
         log.info("收到客户端连接IP:{}", clientIp);
     }
 
+    @Override
+    public void channelInactive(ChannelHandlerContext ctx) throws Exception {
+        ChannelMapUtil.removeChannelContext(ctx);
+    }
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
         log.error("Netty-Server捕获的异常：{}", cause.getMessage());

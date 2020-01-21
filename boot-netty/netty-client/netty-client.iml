@@ -69,6 +69,7 @@
     <orderEntry type="library" name="Maven: io.netty:netty-all:4.1.44.Final" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.10" level="project" />
     <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:3.11.1" level="project" />
+    <orderEntry type="library" name="Maven: cn.hutool:hutool-all:5.1.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-starter-test:2.2.3.BUILD-SNAPSHOT" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-test:2.2.3.BUILD-SNAPSHOT" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-test-autoconfigure:2.2.3.BUILD-SNAPSHOT" level="project" />

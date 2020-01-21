@@ -1,7 +1,9 @@
 package com.yongliang.socket.server;
 
 import com.yongliang.socket.handler.NettyServerHandlerInitializer;
+import com.yongliang.socket.protobuf.MessageBase;
 import io.netty.bootstrap.ServerBootstrap;
+import io.netty.channel.Channel;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelOption;
 import io.netty.channel.EventLoopGroup;
@@ -30,6 +32,10 @@ public class NettyServer {
     //work 线程组用于数据处理
     private EventLoopGroup work = new NioEventLoopGroup();
 
+    //向客户端发送消息
+    public void sendClientMsg(Channel channel,MessageBase.Message message) {
+        channel.writeAndFlush(message);
+    }
     @PostConstruct
     public void start() throws InterruptedException {
         ServerBootstrap bootstrap = new ServerBootstrap();

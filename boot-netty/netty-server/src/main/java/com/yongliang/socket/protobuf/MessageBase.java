@@ -80,7 +80,7 @@ public final class MessageBase {
             super(builder);
         }
 
-        private Message() {
+        public Message() {
             requestId_ = "";
             cmd_ = 0;
             content_ = "";
