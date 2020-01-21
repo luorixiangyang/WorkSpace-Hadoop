@@ -3,10 +3,7 @@ package com.yongliang.socket.server;
 import com.yongliang.socket.handler.NettyServerHandlerInitializer;
 import com.yongliang.socket.protobuf.MessageBase;
 import io.netty.bootstrap.ServerBootstrap;
-import io.netty.channel.Channel;
-import io.netty.channel.ChannelFuture;
-import io.netty.channel.ChannelOption;
-import io.netty.channel.EventLoopGroup;
+import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import lombok.extern.slf4j.Slf4j;
@@ -36,8 +33,9 @@ public class NettyServer {
     //向客户端发送消息
     public boolean sendClientMsg(Channel channel, MessageBase.Message message) {
         if (channel.isActive()) {
-            channel.writeAndFlush(message);
-            return  true;
+            ChannelFuture resultFuture = channel.writeAndFlush(message);
+            resultFuture.addListener((ChannelFutureListener) channelFuture -> log.info("服务端手动发送 Google Protocol 成功={}", message.getContentBytes().toStringUtf8()));
+            return true;
         } else {
             log.info("该客户端不在线：{}", message.getRequestIdBytes().toStringUtf8());
             return false;
@@ -59,9 +57,9 @@ public class NettyServer {
                 //设置为长连接
                 .childOption(ChannelOption.SO_KEEPALIVE, true)
                 //用于操作接收缓冲区和发送缓冲区
-                .childOption(ChannelOption.SO_RCVBUF,256)
+                .childOption(ChannelOption.SO_RCVBUF, 256)
                 //用于操作接收缓冲区和发送缓冲区
-                .childOption(ChannelOption.SO_SNDBUF,256)
+                .childOption(ChannelOption.SO_SNDBUF, 256)
                 //将小的数据包包装成更大的帧进行传送，提高网络的负载
                 .childHandler(new NettyServerHandlerInitializer());
         ChannelFuture future = bootstrap.bind().sync();
