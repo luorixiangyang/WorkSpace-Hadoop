@@ -1,12 +1,14 @@
 package com.yongliang.socket.handler;
 
 import cn.hutool.core.date.DateUtil;
-import com.yongliang.socket.utils.ChannelMapUtil;
 import com.yongliang.socket.protobuf.MessageBase;
 import com.yongliang.socket.protobuf.message.HeartbeatResponsePacket;
+import com.yongliang.socket.utils.ChannelMapUtil;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
+import io.netty.handler.timeout.IdleState;
+import io.netty.handler.timeout.IdleStateEvent;
 import lombok.extern.slf4j.Slf4j;
 
 import java.net.InetSocketAddress;
@@ -30,7 +32,7 @@ public class NettyServerHandler extends SimpleChannelInboundHandler<MessageBase.
             //实现Channel统一管理和服务端定向向客户端发送消息
             String hosCode = message.getRequestIdBytes().toStringUtf8();
             if (ChannelMapUtil.getChannelByName(hosCode) == null) {
-                log.info("客户端加入了：{}",message.getRequestIdBytes().toStringUtf8());
+                log.info("客户端加入了：{}", message.getRequestIdBytes().toStringUtf8());
                 ChannelMapUtil.addChannel(hosCode, channelHandlerContext);
             }
             MessageBase.Message result = new MessageBase.Message()
@@ -53,6 +55,20 @@ public class NettyServerHandler extends SimpleChannelInboundHandler<MessageBase.
     public void channelInactive(ChannelHandlerContext ctx) throws Exception {
         ChannelMapUtil.removeChannelContext(ctx);
     }
+
+
+    @Override
+    public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
+        super.userEventTriggered(ctx, evt);
+        if (evt instanceof IdleStateEvent) {
+            IdleStateEvent event = (IdleStateEvent) evt;
+            if (event.state().equals(IdleState.READER_IDLE)) {
+                //标志该链接已经close 了 
+                ctx.close();
+            }
+        }
+    }
+
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
         log.error("Netty-Server捕获的异常：{}", cause.getMessage());

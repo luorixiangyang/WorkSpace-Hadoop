@@ -12,6 +12,7 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import java.net.InetSocketAddress;
@@ -33,9 +34,16 @@ public class NettyServer {
     private EventLoopGroup work = new NioEventLoopGroup();
 
     //向客户端发送消息
-    public void sendClientMsg(Channel channel,MessageBase.Message message) {
-        channel.writeAndFlush(message);
+    public boolean sendClientMsg(Channel channel, MessageBase.Message message) {
+        if (channel.isActive()) {
+            channel.writeAndFlush(message);
+            return  true;
+        } else {
+            log.info("该客户端不在线：{}", message.getRequestIdBytes().toStringUtf8());
+            return false;
+        }
     }
+
     @PostConstruct
     public void start() throws InterruptedException {
         ServerBootstrap bootstrap = new ServerBootstrap();
@@ -49,7 +57,7 @@ public class NettyServer {
                 //设置TCP长连接,一般如果两个小时内没有数据的通信时,TCP会自动发送一个活动探测数据报文
                 .childOption(ChannelOption.TCP_NODELAY, true)
                 //设置为长连接
-                .childOption(ChannelOption.SO_KEEPALIVE,true)
+                .childOption(ChannelOption.SO_KEEPALIVE, true)
                 //将小的数据包包装成更大的帧进行传送，提高网络的负载
                 .childHandler(new NettyServerHandlerInitializer());
         ChannelFuture future = bootstrap.bind().sync();

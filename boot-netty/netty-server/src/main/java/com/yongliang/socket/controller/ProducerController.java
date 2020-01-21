@@ -1,9 +1,9 @@
 package com.yongliang.socket.controller;
 
 import cn.hutool.core.date.DateUtil;
-import com.yongliang.socket.utils.ChannelMapUtil;
 import com.yongliang.socket.protobuf.MessageBase;
 import com.yongliang.socket.server.NettyServer;
+import com.yongliang.socket.utils.ChannelMapUtil;
 import io.netty.channel.ChannelHandlerContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,11 +24,10 @@ public class ProducerController {
     public String sendClientMsg() {
         MessageBase.Message message = new MessageBase.Message()
                 .toBuilder().setCmd(MessageBase.Message.CommandType.NORMAL)
-                .setContent("这是服务端发送给客户端的消息:"+ DateUtil.now())
+                .setContent("这是服务端发送给客户端的消息:" + DateUtil.now())
                 .setRequestId("LZ20151203093957").build();
         ChannelHandlerContext handlerContext = ChannelMapUtil.getChannelByName("LZ20151203093957");
-        nettyServer.sendClientMsg(handlerContext.channel(), message);
-
+        boolean sendFlag = nettyServer.sendClientMsg(handlerContext.channel(), message);
         return "send ok";
     }
 }
