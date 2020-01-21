@@ -19,7 +19,7 @@ public class ClientHandlerInitilizer extends ChannelInitializer<Channel> {
     @Override
     protected void initChannel(Channel channel) throws Exception {
         channel.pipeline()
-                .addLast(new IdleStateHandler(0, 10, 0))
+                .addLast(new IdleStateHandler(0, 15, 0))
                 .addLast(new ProtobufVarint32FrameDecoder())
                 .addLast(new ProtobufDecoder(MessageBase.Message.getDefaultInstance()))
                 .addLast(new ProtobufVarint32LengthFieldPrepender())

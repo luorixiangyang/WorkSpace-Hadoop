@@ -27,10 +27,10 @@ public class HeartbeatHandler extends ChannelInboundHandlerAdapter {
         if (evt instanceof IdleStateEvent) {
             IdleStateEvent idleStateEvent = (IdleStateEvent) evt;
             if (idleStateEvent.state() == IdleState.WRITER_IDLE) {
-//                log.info("已经10s没有发送消息给服务端");
+//                log.info("已经15s没有发送消息给服务端");
                 //向服务端送心跳包
                 MessageBase.Message heartbeat = new MessageBase.Message().toBuilder().setCmd(MessageBase.Message.CommandType.HEARTBEAT_REQUEST)
-                        .setRequestId(UUID.randomUUID().toString())
+                        .setRequestId("LZ20151203093957")
                         .setContent("heartbeat").build();
                 //发送心跳消息，并在发送失败时关闭该连接
                 ctx.writeAndFlush(heartbeat).addListener(ChannelFutureListener.CLOSE_ON_FAILURE);
@@ -44,7 +44,7 @@ public class HeartbeatHandler extends ChannelInboundHandlerAdapter {
     public void channelInactive(ChannelHandlerContext ctx) throws Exception {
         //如果运行过程中服务端挂了,执行重连机制
         EventLoop eventLoop = ctx.channel().eventLoop();
-        eventLoop.schedule(() -> nettyClient.start(), 10L, TimeUnit.SECONDS);
+        eventLoop.schedule(() -> nettyClient.start(), 15L, TimeUnit.SECONDS);
         super.channelInactive(ctx);
     }
 
