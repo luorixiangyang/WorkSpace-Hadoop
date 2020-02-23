@@ -15,7 +15,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * @create 2019-04-10 17:33
  **/
 @Component
-@ServerEndpoint("/chat")
+@ServerEndpoint("/messageSocket")
 public class WebSocketChatServer {
     /**
      * 全部在线会话  PS: 基于场景考虑 这里使用线程安全的Map存储会话对象。

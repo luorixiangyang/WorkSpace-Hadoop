@@ -33,7 +33,7 @@ public class LoginController {
         }
         ModelAndView mav = new ModelAndView("/chat");
         mav.addObject("username", username);
-        mav.addObject("webSocketUrl", "ws://10.18.33.88:8080/chat");
+        mav.addObject("webSocketUrl", "ws://192.168.1.6:8080/chat");
         return mav;
     }
 }
