@@ -27,20 +27,20 @@ public class TopicConfig {
 
     @Bean
     public Queue queuetopic() {
-        return new Queue(TopicConfig.QUEUE_NAME);
+        return new Queue(TopicConfig.QUEUE_NAME,true);
     }
     @Bean
     public Queue queuetopic2() {
-        return new Queue(TopicConfig.QUEUE_NAME2);
+        return new Queue(TopicConfig.QUEUE_NAME2,true);
     }
     @Bean
     public Queue queuetopic3() {
-        return new Queue(TopicConfig.QUEUE_NAME3);
+        return new Queue(TopicConfig.QUEUE_NAME3,true);
     }
     // 配置交换器
     @Bean
     TopicExchange topicExchange() {
-        return new TopicExchange(TopicConfig.EXCHANGE_NAME);
+        return new TopicExchange(TopicConfig.EXCHANGE_NAME,true,false);
     }
     // 绑定队列到交换器，并设置路由键（log.#）
     @Bean

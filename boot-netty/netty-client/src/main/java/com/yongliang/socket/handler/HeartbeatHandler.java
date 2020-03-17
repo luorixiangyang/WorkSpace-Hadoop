@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author pjmike
+ * @author zhangyongliang
  * @create 2018-10-25 17:15
  */
 @Slf4j

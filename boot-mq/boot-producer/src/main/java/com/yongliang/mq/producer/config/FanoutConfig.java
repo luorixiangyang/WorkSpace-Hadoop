@@ -24,16 +24,16 @@ public class FanoutConfig {
     public final static String EXCHANGE_NAME = "myfanout";
     @Bean
     public Queue queueFanout() {
-        return new Queue(FanoutConfig.QUEUE_NAME);
+        return new Queue(FanoutConfig.QUEUE_NAME,true);
     }
     @Bean
     public Queue queueFanout2() {
-        return new Queue(FanoutConfig.QUEUE_NAME2);
+        return new Queue(FanoutConfig.QUEUE_NAME2,true);
     }
     //配置交换器
     @Bean
     FanoutExchange fanoutExchange() {
-        return new FanoutExchange(FanoutConfig.EXCHANGE_NAME);
+        return new FanoutExchange(FanoutConfig.EXCHANGE_NAME,true,false);
     }
     // 绑定队列到交换器
     @Bean

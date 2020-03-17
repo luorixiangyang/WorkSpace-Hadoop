@@ -1,5 +1,7 @@
 package com.yongliang.mq.consumer.receive;
 
+import com.rabbitmq.client.Channel;
+import org.springframework.amqp.core.Message;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
@@ -11,10 +13,12 @@ import org.springframework.stereotype.Component;
  * @create 2019-10-28 15:57
  **/
 @Component
-@RabbitListener(queues = "fanout")
+
 public class FanoutReceiver {
+
+    @RabbitListener(queues = "fanout")
     @RabbitHandler
-    public void process(String msg) {
-        System.out.println("Fanout（FanoutReceiver）消费消息：" + msg);
+    public void onMessage(Message message, Channel channel) throws Exception {
+        channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
     }
 }

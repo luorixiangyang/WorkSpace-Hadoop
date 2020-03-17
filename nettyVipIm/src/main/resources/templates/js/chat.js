@@ -42,7 +42,11 @@ $(document).ready(function(){
 			}
 		},
 		chat:function () {
-			
+			var $message = $('#mjr_send');
+			if ($message.val()) {
+				socket.send(JSON.stringify({username: $('#username').text(), msg: $message.val()}));
+				$message.val(null);
+			}
 		}
 	};
 });

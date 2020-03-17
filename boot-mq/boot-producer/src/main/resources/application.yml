@@ -13,9 +13,9 @@ spring:
     banner-mode: console
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://10.18.33.229:3306/dev_yxwg?characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false&useUnicode=true&useSSL=false&serverTimezone=Asia/Shanghai
-    username: fjzl
-    password: fjzl
+    url: jdbc:mysql://xxxxxx:3306/dev_yxwg?characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false&useUnicode=true&useSSL=false&serverTimezone=Asia/Shanghai
+    username: xxxx
+    password: xxxxx
     type: com.zaxxer.hikari.HikariDataSource
     hikari:
       minimum-idle: 5
@@ -25,14 +25,22 @@ spring:
     database-platform: org.hibernate.dialect.MySQLDialect
   redis:
     database: 0
-    host: 10.18.33.158
+    host: xxxxx
     port: 6379
     password:
   rabbitmq:
-    host: 192.168.92.50
+    host: xxxxxxx
     port: 5672
     username: admin
     password: admin
+    virtual-host: /test_mq
+    publisher-returns: true
+    template:
+      mandatory: true
+    listener:
+      simple:
+        acknowledge-mode: manual
+        prefetch: 1
 logging:
   level:
     root: info
